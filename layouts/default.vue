@@ -16,9 +16,13 @@
 <style lang="scss" >
 /* Paleta #3b8070  #3b8070  #3b8070  #35495e  #35495e  #35495e #FF003C*/
 
+$text-color: #35495e;
+
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .center {
@@ -31,6 +35,7 @@ body {
 
 .container-nuxt {
   min-height: 100vh;
+  overflow: hidden;
   text-align: center;
   display: grid;
   grid-template-columns: 300px 1fr;

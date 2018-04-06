@@ -1,21 +1,31 @@
 <template lang="pug">
   section.center.index
     app-logo
+    Animation
     h1.title Luis Ángel Vásquez Nepomuceno
     p.subtitle Proyectos
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import Animation from '~/components/Animation.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    Animation
   }
 }
 </script>
 
 <style lang="scss" scoped>
+
+.index {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  position: relative;
+}
 
 .title {
   display: block;
