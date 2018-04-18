@@ -33,20 +33,33 @@ export default {
 <style lang="scss" scoped>
 
 .index-container {
-  background-image: url('~/assets/portada.svg');
+  background-image: url('~/assets/portada.png');
   height: 100vh;
-  background-size: cover;
   position: relative;
-  animation: apper 1s;
-  @keyframes apper {
-    0% { opacity: .8; }
-    100% { opacity: 1; }
+  background-repeat: no-repeat;
+  transition: all 1s;
+  background-size: cover;
+  animation: move 15s infinite linear alternate;
+  @keyframes move {
+    0% {
+      background-position: -10px;
+    }
+    50% {
+    }
+    100% {
+      background-position: 10px;
+    }
   }
 }
 
 .index {
   position: relative;
   background: rgba(1, 22, 39, 0.95);
+  animation: apper 1s;
+  @keyframes apper {
+    0% { opacity: .8; }
+    100% { opacity: 1; }
+  }
 }
 
 .title {
