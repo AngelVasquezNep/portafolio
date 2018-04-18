@@ -8,31 +8,16 @@
         a(href="#proyectos", @click="down($event)")
           img(src="~/assets/down.png")
     #proyectos(ref="proyectos")
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
-      h1 más contenido
+      myExperiencia(ref="proyectos")
+    .proyectos
+      
 </template>
 
 <script>
 import myHeader from '~/components/header.vue'
+import myExperiencia from '~/components/experiencia.vue'
 export default {
-  components: {myHeader},
+  components: { myHeader, myExperiencia},
   methods: {
     down (evt) {
     evt.preventDefault()

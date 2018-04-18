@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Portafolio de Luis Angel Vasquez Nepomuceno' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/a.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/a.png' },
+      { href:"https://fonts.googleapis.com/css?family=Lato", rel:"stylesheet" }
     ]
   },
   /*
