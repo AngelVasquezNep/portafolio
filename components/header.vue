@@ -3,9 +3,9 @@
     figure
       img.img(src="~static/perfil.jpg")
     .botones
-      router-link.btn-link(to="/") About
-      router-link.btn-link(to="/proyectos") Proyectos
-    p Contacto
+      a.btn-link(href="#") About
+      a.btn-link(href="#") Proyectos
+      a.btn-link(href="#") Contacto
 
 </template>
 
@@ -19,15 +19,20 @@
 <style lang="sass" scoped>
 
 .header
-  background-color: #42E0C3
   position: relative
-  height: 100vh
   grid-gap: 10px
   color: #526488
+  grid-template-columns: auto auto
+  justify-content: space-between
+  margin: 0 10px
+  figure 
+    margin: 10px
   .img
-    width: 100%
+    width: 70px
     border-radius: 50%
     box-shadow: 0px 3px 5px 2px rgba(0,0,0,.2)
+  .botones
+    display: flex
 
 .btn-link
   text-decoration: none
@@ -36,9 +41,12 @@
   border-radius: 5px
   margin: 5px
   transition: all .2s
-  &:hover 
-    background-color: #526488
-    color: #fff
+  outline: none
+  background-color: #FDFFFC
+  color: #011627
+  &:hover, &:focus
+    color: #FDFFFC
+    background-color: #2EC4B6
   &:active
-    transform: scale(.5)
+    transform: scale(.9)
 </style>

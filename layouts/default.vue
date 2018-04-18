@@ -1,28 +1,25 @@
 <template lang="pug">
   .container-nuxt
-    my-header.my-header
     nuxt.nuxt
 </template>
 
 <script>
-  import myHeader from '~/components/header.vue'
-  import myFooter from '~/components/footer.vue'
   export default {
-    name: 'default',
-    components: { myHeader, myFooter }
+    name: 'default'
   }
 </script>
 
 <style lang="scss" >
-/* Paleta #3b8070  #3b8070  #3b8070  #35495e  #35495e  #35495e #FF003C*/
+/* Paleta #3b8070  #35495e  #35495e  #35495e #FF003C*/
 
 $text-color: #35495e;
 
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
-  min-height: 100vh;
-  overflow: hidden;
+  // min-height: 100vh;
+  // overflow: hidden;
+  font-size: 12px;
 }
 
 .center {
@@ -38,7 +35,7 @@ body {
   overflow: hidden;
   text-align: center;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 
