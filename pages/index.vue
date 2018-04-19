@@ -4,7 +4,7 @@
       .index.center
         myHeader
         h1.title Luis Ángel Vásquez Nepomuceno
-        p.subtitle Desarrollador Front end
+        h2.subtitle Desarrollador Front end
         a(href="#proyectos", @click="down($event)")
           img(src="~/assets/down.png")
     .stack(ref="stack")
@@ -62,6 +62,15 @@ export default {
     0% { opacity: .8; }
     100% { opacity: 1; }
   }
+  @media screen and (max-width:600px) {
+    .title {
+      font-size: 35px;
+    }
+    .subtitle {
+      font-size: 30px;
+    }
+  }
+
 }
 
 .title {

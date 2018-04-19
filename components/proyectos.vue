@@ -17,7 +17,7 @@
       .proyecto-img
         a(target="_blank", href="https://platzi-planet.now.sh")
           img(src="~/assets/proyectos/platzi-planet.png")
-      hr
+    
 
 
     .proyecto
@@ -25,9 +25,9 @@
         h2 Asomas
         small Vue - Nuxt
         ul
-          li Platzi-planet es una aplicación creada con Vue.js
-          li Usa la API de la NASA
-          li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
+          li Asomas es una Organización sin fines de lucro
+          li Su página original tenía áreas de oportunidad y me decidí regalarles ésta.
+          li Usa ruteo del lado del cliente con Nuxt
           li Responsive
         a.git(target="_blank", href="https://github.com/angelvasqueznep/asomas")
           img(src="~/assets/github.png")
@@ -35,16 +35,16 @@
       .proyecto-img
         a(target="_blank", href="https://asomas.now.sh/") 
           img(src="~/assets/proyectos/asomas.png")
-      hr
+    
     
     .proyecto
       .proyecto-descripcion
         h2 Platzi-video
         small React
         ul
-          li Platzi-planet es una aplicación creada con Vue.js
-          li Usa la API de la NASA
-          li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
+          li Platzi-video es una aplicación creada con React.js
+          li Uso de la API de Video de HTML5
+          li Componentes reutilizables
           li Responsive
         a.git(target="_blank", href="https://github.com/angelvasqueznep/platzi-video")
           img(src="~/assets/github.png")
@@ -52,24 +52,24 @@
       .proyecto-img
         a(target="_blank", href="https://platzi-video.now.sh/")
           img(src="~/assets/proyectos/platzi-video.png")
-      hr
+    
     
     .proyecto
       .proyecto-descripcion
         h2 iVuesic
         small Vue - Nuxt
         ul
-          li Platzi-planet es una aplicación creada con Vue.js
-          li Usa la API de la NASA
+          li Platzi-planet es una aplicación creada con Nuxt
+          li Usa una API provista por Platzi a través de Spotify
           li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
-          li Responsive
+          li Es muy divertida
         a.git(target="_blank", href="https://github.com/angelvasqueznep/ivuesic")
           img(src="~/assets/github.png")
         a.btn(target="_blank", href="https://ivuesic.now.sh/") iVuesic
       .proyecto-img
         a(target="_blank", href="https://ivuesic.now.sh/")
           img(src="~/assets/proyectos/ivuesic.png")
-      hr
+    
 
 </template>
 
@@ -89,6 +89,15 @@
     grid-template-columns: 1fr 1fr
     margin: 10px
     padding: 30px
+    @media screen and (max-width:1100px)
+      padding: 30px 0
+    @media screen and (max-width:950px)
+      grid-template-columns: 1fr
+      grid-gap: 10px
+      .proyecto-img
+        img
+          width: 90% !important
+          margin: 10px 0 
     // border-radius: 5px
     // box-shadow: 0 0 2px 2px #A9A9A9
     // border-bottom: 1px solid #808080
@@ -105,7 +114,7 @@
     .proyecto-img
       &:hover
         img
-          box-shadow: 0 0 3px 3px #00F9D8
+          box-shadow: 0 0 3px 3px #696969
 
       img
         transition: all .3s

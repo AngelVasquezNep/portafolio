@@ -46,9 +46,6 @@
     img
       width: 80px
       margin: 5px
-    @media screen and (max-width: 500px)
-      img
-        max-width: 50px !important
   .css
     border-radius: 10px
 

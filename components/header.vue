@@ -3,9 +3,9 @@
     figure
       img.img(src="~static/perfil.jpg")
     .botones
-      a.btn-link(href="#") About
-      a.btn-link(href="#proyectos", @click="down($event)") Proyectos
-      a.btn-link(href="#") Contacto
+      a.btn-link(href="#proyectos", @click="down($event, 'proyectos')") Proyectos
+      a.btn-link(href="#proyectos", @click="down($event, 'proyectos')") About
+      a.btn-link(href="#proyectos", @click="down($event, 'proyectos')") Contacto
 
 </template>
 
@@ -14,9 +14,9 @@
   export default {
     name: 'my-header',
     methods: {
-    down (evt) {
+    down (evt, obj) {
     evt.preventDefault()
-      document.getElementById('proyectos').scrollIntoView({
+      document.getElementById(obj).scrollIntoView({
         behavior: "smooth",
         block: "start"
       })
@@ -28,12 +28,21 @@
 <style lang="sass" scoped>
 
 .header
+  display: grid
   position: relative
   grid-gap: 10px
   color: #526488
   grid-template-columns: auto auto
   justify-content: space-between
   margin: 0 10px
+  @media screen and (max-width: 600px)
+    grid-template-columns: 1fr
+    justify-content: center
+    .botones
+      display: grid
+      justify-content: center
+    .img
+      width: 100px !important
   figure 
     margin: 10px
   .img
