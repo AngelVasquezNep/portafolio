@@ -1,20 +1,22 @@
 <template lang="pug">
   .proyectos
     h2.subtitulo Proyectos
+    
     .proyecto
       .proyecto-descripcion
         h2 Platzi-planet
         small Vue
-        p Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 
+        ul
+          li Platzi-planet es una aplicación creada con Vue.js
+          li Usa la API de la NASA
+          li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
+          li Responsive
+        a.git(href="#")
+          img(src="~/assets/github.png")
         a.btn(href="#") Url
       .proyecto-img
         img(src="~/assets/vue.png")
-    .proyecto
-      .proyecto-descripcion
-        h2 Platzi-planet
-        a.btn(href="#") Url
-      .proyecto-img
-        img(src="~/assets/react.png")
+
 </template>
 
 <style lang="sass" scoped>
@@ -28,7 +30,7 @@
     font-size: 2.5em
   .proyecto
     display: grid
-    align-items: center
+    // align-items: center
     grid-template-columns: 1fr 1fr
     margin: 10px
     padding: 20px
@@ -36,7 +38,22 @@
     // box-shadow: 0 0 2px 2px #A9A9A9
     border-bottom: 1px solid #808080
 
+    .proyecto-descripcion
+      text-align: left
+      display: grid
+      h2
+        font-size: 2em
+        margin: 0
+
     .proyecto-img
       img
-        width: 80%
+        width: 50%
+  .btn
+    text-align: center
+    margin: 5px
+  .git
+    justify-self: center
+    img
+      margin: 0
+      width: 30px
 </style>

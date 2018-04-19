@@ -39,5 +39,24 @@ body {
   grid-template-rows: auto 1fr;
 }
 
+.btn {
+  text-decoration: none;
+  padding: 5px 20px;
+  border: 1px solid #1f1f1f;
+  border-radius: 5px;
+  margin: 5px;
+  transition: all .1s;
+  outline: none;
+  background-color: #fff;
+  &:hover {
+    color: #fff;;
+    background-color: #42E0C3;
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(.95);
+  }
+}
+
 
 </style>

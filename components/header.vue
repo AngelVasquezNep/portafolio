@@ -4,7 +4,7 @@
       img.img(src="~static/perfil.jpg")
     .botones
       a.btn-link(href="#") About
-      a.btn-link(href="#") Proyectos
+      a.btn-link(href="#proyectos", @click="down($event)") Proyectos
       a.btn-link(href="#") Contacto
 
 </template>
@@ -12,7 +12,16 @@
 <script>
 
   export default {
-    name: 'my-header'
+    name: 'my-header',
+    methods: {
+    down (evt) {
+    evt.preventDefault()
+      document.getElementById('proyectos').scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      })
+    }
+  }
   }
 </script>
 
