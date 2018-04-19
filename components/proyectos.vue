@@ -8,7 +8,10 @@
         small Vue.js
         ul
           li Platzi-planet es una aplicación creada con Vue.js
-          li Usa la API de la NASA
+          li Usa la 
+            | 
+            a(href="https://api.nasa.gov/index.html", target="_blank") API 
+            | de la NASA
           li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
           li Responsive
         a.git(target="_blank", href="https://github.com/angelvasqueznep/platzi-planet")
@@ -79,9 +82,9 @@
           li Layout es página que muestra el poder de CSS Grid Layout
           li Se maqueto 
             | 
-            a(href="https://www.instagram.com/") Instagram 
+            a(href="https://www.instagram.com/", target="_blank") Instagram 
             | y 
-            a(href="https://www.pinterest.com.mx/") Pinterest
+            a(href="https://www.pinterest.com.mx/", target="_blank") Pinterest
           li Es Full Responsive
         a.git(target="_blank", href="https://github.com/angelvasqueznep/layout")
           img(src="~/assets/github.png", alt="Layout")
@@ -89,6 +92,58 @@
       .proyecto-img
         a(target="_blank", href="https://layout.now.sh/")
           img(src="~/assets/proyectos/layout.png", alt="Layout")
+    
+    
+    .proyecto
+      .proyecto-descripcion
+        h2 Invie
+        small Vanillia.js
+        ul
+          li StartUp de las guitarras más locas
+          li Menú Responsive off-canvas
+          li Lazi-loading
+        a.git(target="_blank", href="https://github.com/angelvasqueznep/inviegit")
+          img(src="~/assets/github.png", alt="Layout")
+        a.btn(target="_blank", href="https://invie-sibles.now.sh/") Invie
+      .proyecto-img
+        a(target="_blank", href="https://invie-sibles.now.sh/")
+          img(src="~/assets/proyectos/invie.png", alt="Invie")
+    
+    
+    .proyecto
+      .proyecto-descripcion
+        h2 Platzi-music
+        small Vue.js
+        ul
+          li Página construida con Vue.js
+          li Se usa la API de 
+            | 
+            a(href="https://www.last.fm/es/api", target="_blank") Last FM
+          li Es Full Responsive
+        a.git(target="_blank", href="https://github.com/angelvasqueznep/layout")
+          img(src="~/assets/github.png", alt="Layout")
+        a.btn(target="_blank", href="https://layout.now.sh/") Platzi-music
+      .proyecto-img
+        a(target="_blank", href="https://layout.now.sh/")
+          img(src="~/assets/proyectos/platzi-music.png", alt="Platzi-music")
+    
+    
+    .proyecto
+      .proyecto-descripcion
+        h2 Platzipalooza
+        small Foundation
+        ul
+          li El evento más esperado del año
+          li Se maqueto con 
+            | 
+            a(href="https://foundation.zurb.com/", target="_blank") Foundation
+          li Es Full Responsive
+        a.git(target="_blank", href="https://github.com/angelvasqueznep/layout")
+          img(src="~/assets/github.png", alt="Layout")
+        a.btn(target="_blank", href="https://layout.now.sh/") Foundation
+      .proyecto-img
+        a(target="_blank", href="https://layout.now.sh/")
+          img(src="~/assets/proyectos/platzi-palooza.png", alt="Foundation")
     
 
 </template>
@@ -134,6 +189,7 @@
     .proyecto-img
       &:hover
         img
+          transform: translateY(-10px) scale(1.05)
           box-shadow: 0 0 3px 3px #696969
 
       img
