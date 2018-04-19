@@ -19,7 +19,8 @@ body {
   font-family: 'Courier New', Courier, monospace;
   // min-height: 100vh;
   // overflow: hidden;
-  font-size: 12px;
+  font-size: 16px;
+  color: #373737
 }
 
 .center {

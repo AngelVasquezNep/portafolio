@@ -5,9 +5,7 @@
       .icons
         img(src="~/assets/github.png")
         img(src="~/assets/webpack.png")
-        img(src="~/assets/sass.png")
-        img(src="~/assets/grid.png")
-      h3 Git - Webpack - Sass - CSS Grid 
+      h3 GitHub - Webpack  
     .item.item2
       .icons
         img(src="~/assets/vue.png")
@@ -15,36 +13,43 @@
       h3 Vue - React
     .item.item3
       .icons
-        img(src="~/assets/state.png")
-        img(src="~/assets/router.png")
-      h3 State - Router
+        img(src="~/assets/sass.png")
+        img(src="~/assets/pug.jpg")
+        img(src="~/assets/grid.png")
+      h3 Sass - Pug - Css Grid
 </template>
 
 <style lang="sass" scoped>
   .experiencia
-    font-size: 1.4em
+    padding-top: 20px
+    padding-bottom: 50px
     grid-template-columns: repeat(3, 1fr)
-    grid-template-areas: "titulo titulo titulo" "item1 item2 item3"
     grid-gap: 20px
     margin: 20px
     color: #2C2C2C
     font-family: 'Lato', sans-serif;
+    @media screen and (max-width: 768px)
+      grid-template-columns: 1fr
+      .item
+        img
+          width: 100px
+    .subtitulo
+      font-size: 2.5em
   .item
+    display: grid
+    grid-row-gap: 10px 
     .icons
       justify-content: center
       display: grid
       align-items: center
       grid-auto-flow: column
     img
-      width: 70px
+      width: 80px
       margin: 5px
+    @media screen and (max-width: 500px)
+      img
+        max-width: 50px !important
 
   .subtitulo
-    grid-area: titulo
-  .item1
-    grid-area: item1
-  .item2
-    grid-area: item2
-  .item3
-    grid-area: item3
+    grid-column: 1 / -1
 </style>

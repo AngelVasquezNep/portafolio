@@ -7,21 +7,23 @@
         p.subtitle Desarrollador Front end
         a(href="#proyectos", @click="down($event)")
           img(src="~/assets/down.png")
+    .stack(ref="stack")
+      myStack
     #proyectos(ref="proyectos")
-      myExperiencia(ref="proyectos")
-    .proyectos
+      myProyectos
       
 </template>
 
 <script>
 import myHeader from '~/components/header.vue'
-import myExperiencia from '~/components/experiencia.vue'
+import myStack from '~/components/stack.vue'
+import myProyectos from '~/components/proyectos.vue'
 export default {
-  components: { myHeader, myExperiencia},
+  components: { myHeader, myStack, myProyectos},
   methods: {
     down (evt) {
     evt.preventDefault()
-      this.$refs.proyectos.scrollIntoView({
+      this.$refs.stack.scrollIntoView({
         behavior: "smooth",
         block: "start"
       })
