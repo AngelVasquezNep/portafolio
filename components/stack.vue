@@ -15,7 +15,7 @@
       .icons
         img(src="~/assets/sass.png")
         img(src="~/assets/pug.jpg")
-        img(src="~/assets/grid.png")
+        img.css(src="~/assets/grid.png")
       h3 Sass - Pug - Css Grid
 </template>
 
@@ -49,6 +49,8 @@
     @media screen and (max-width: 500px)
       img
         max-width: 50px !important
+  .css
+    border-radius: 10px
 
   .subtitulo
     grid-column: 1 / -1

@@ -11,11 +11,65 @@
           li Usa la API de la NASA
           li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
           li Responsive
-        a.git(href="#")
+        a.git(target="_blank", href="https://github.com/angelvasqueznep/platzi-planet")
           img(src="~/assets/github.png")
-        a.btn(href="#") Url
+        a.btn(target="_blank", href="https://platzi-planet.now.sh") Platzi-planet
       .proyecto-img
-        img(src="~/assets/vue.png")
+        a(target="_blank", href="https://platzi-planet.now.sh")
+          img(src="~/assets/proyectos/platzi-planet.png")
+      hr
+
+
+    .proyecto
+      .proyecto-descripcion
+        h2 Asomas
+        small Vue - Nuxt
+        ul
+          li Platzi-planet es una aplicación creada con Vue.js
+          li Usa la API de la NASA
+          li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
+          li Responsive
+        a.git(target="_blank", href="https://github.com/angelvasqueznep/asomas")
+          img(src="~/assets/github.png")
+        a.btn(target="_blank", href="https://asomas.now.sh/") Asomas
+      .proyecto-img
+        a(target="_blank", href="https://asomas.now.sh/") 
+          img(src="~/assets/proyectos/asomas.png")
+      hr
+    
+    .proyecto
+      .proyecto-descripcion
+        h2 Platzi-video
+        small React
+        ul
+          li Platzi-planet es una aplicación creada con Vue.js
+          li Usa la API de la NASA
+          li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
+          li Responsive
+        a.git(target="_blank", href="https://github.com/angelvasqueznep/platzi-video")
+          img(src="~/assets/github.png")
+        a.btn(target="_blank", href="https://platzi-video.now.sh/") Platzi-video
+      .proyecto-img
+        a(target="_blank", href="https://platzi-video.now.sh/")
+          img(src="~/assets/proyectos/platzi-video.png")
+      hr
+    
+    .proyecto
+      .proyecto-descripcion
+        h2 iVuesic
+        small Vue - Nuxt
+        ul
+          li Platzi-planet es una aplicación creada con Vue.js
+          li Usa la API de la NASA
+          li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
+          li Responsive
+        a.git(target="_blank", href="https://github.com/angelvasqueznep/ivuesic")
+          img(src="~/assets/github.png")
+        a.btn(target="_blank", href="https://ivuesic.now.sh/") iVuesic
+      .proyecto-img
+        a(target="_blank", href="https://ivuesic.now.sh/")
+          img(src="~/assets/proyectos/ivuesic.png")
+      hr
 
 </template>
 
@@ -24,21 +78,24 @@
   font-family: 'Lato', sans-serif;  
   padding-top: 20px
   display: grid
+  line-height: 30px
   // grid-gap: 10px
   background-color: #f1f1f1
   .subtitulo
     font-size: 2.5em
   .proyecto
+    align-items: center
     display: grid
-    // align-items: center
     grid-template-columns: 1fr 1fr
     margin: 10px
-    padding: 20px
+    padding: 30px
     // border-radius: 5px
     // box-shadow: 0 0 2px 2px #A9A9A9
-    border-bottom: 1px solid #808080
+    // border-bottom: 1px solid #808080
 
     .proyecto-descripcion
+      width: 90%
+      justify-self: center
       text-align: left
       display: grid
       h2
@@ -46,8 +103,15 @@
         margin: 0
 
     .proyecto-img
+      &:hover
+        img
+          box-shadow: 0 0 3px 3px #00F9D8
+
       img
-        width: 50%
+        transition: all .3s
+        width: 100%
+        border-radius: 20px
+        box-shadow: 0 0 4px 2px #A9A9A9
   .btn
     text-align: center
     margin: 5px
