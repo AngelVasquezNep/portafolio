@@ -1,18 +1,23 @@
 <template lang="pug">
   .experiencia.center
-    h2.subtitulo Mi experiencia
+    h2.subtitulo Stack
     .item.item1
-      img(src="~/assets/down.png")
-      h3 UI y diseño por componentes
-      p Hacer que el usuario pueda navegar por productos sencillos y con patrones reconocibles, así como innovadores, es algo importante.
+      .icons
+        img(src="~/assets/github.png")
+        img(src="~/assets/webpack.png")
+        img(src="~/assets/sass.png")
+        img(src="~/assets/grid.png")
+      h3 Git - Webpack - Sass - CSS Grid 
     .item.item2
-      img(src="~/assets/down.png")
-      h3 Vue and React
-      p Para construir interfaces funcionales me valgo del poder de estos dos grandes Frameworks lideres de la industria por su versatilidad, reactividad y performance.
+      .icons
+        img(src="~/assets/vue.png")
+        img(src="~/assets/react.png")
+      h3 Vue - React
     .item.item3
-      img(src="~/assets/down.png")
-      h3 HTML5-CSS3-Vanillia.js
-      p Me mantengo al día con los elementos básicos del negocio. Desde las API de media hasta las trancisiones y animaciones, babel.
+      .icons
+        img(src="~/assets/state.png")
+        img(src="~/assets/router.png")
+      h3 State - Router
 </template>
 
 <style lang="sass" scoped>
@@ -24,7 +29,15 @@
     margin: 20px
     color: #2C2C2C
     font-family: 'Lato', sans-serif;
-
+  .item
+    .icons
+      justify-content: center
+      display: grid
+      align-items: center
+      grid-auto-flow: column
+    img
+      width: 70px
+      margin: 5px
 
   .subtitulo
     grid-area: titulo
