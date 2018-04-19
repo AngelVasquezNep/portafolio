@@ -1,7 +1,7 @@
 <template lang="pug">
   .header.center
     figure
-      img.img(src="~static/perfil.jpg")
+      img.img(src="~static/perfil.jpg", alt="Luis Ángel Vásquez Nepomuceno")
     .botones
       a.btn-link(href="#proyectos", @click="down($event, 'proyectos')") Proyectos
       a.btn-link(href="#proyectos", @click="down($event, 'proyectos')") About
