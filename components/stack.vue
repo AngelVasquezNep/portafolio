@@ -3,19 +3,19 @@
     h2.subtitulo Stack
     .item.item1
       .icons
-        img(src="~/assets/github.png")
-        img(src="~/assets/webpack.png")
+        img(src="~/assets/github.png", alt="github")
+        img(src="~/assets/webpack.png", alt="webpack")
       h3 GitHub - Webpack  
     .item.item2
       .icons
-        img(src="~/assets/vue.png")
-        img(src="~/assets/react.png")
+        img(src="~/assets/vue.png", alt="vue")
+        img(src="~/assets/react.png", alt="react")
       h3 Vue - React
     .item.item3
       .icons
-        img(src="~/assets/sass.png")
-        img(src="~/assets/pug.jpg")
-        img.css(src="~/assets/grid.png")
+        img(src="~/assets/sass.png", alt="sass")
+        img(src="~/assets/pug.jpg", alt="pug")
+        img.css(src="~/assets/grid.png", alt="css-grid")
       h3 Sass - Pug - Css Grid
 </template>
 

@@ -1,6 +1,10 @@
 <template lang="pug">
   .footer
-    p Soy un Footer
+    a(target="_blank", href="https://www.linkedin.com/in/ángel-vásquez-nepomuceno/") Linkedin
+    a(target="_blank", href="https://github.com/AngelVasquezNep") GitHub
+    a(target="_blank", href="https://twitter.com/angelvasqueznep") Twitter
+    a(target="_blank", href="https://platzi.com/@AngelVasquezNep/") Platzi
+    a(target="_blank", href="#") Blog
 </template>
 
 <script>

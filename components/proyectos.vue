@@ -5,70 +5,90 @@
     .proyecto
       .proyecto-descripcion
         h2 Platzi-planet
-        small Vue
+        small Vue.js
         ul
           li Platzi-planet es una aplicación creada con Vue.js
           li Usa la API de la NASA
           li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
           li Responsive
         a.git(target="_blank", href="https://github.com/angelvasqueznep/platzi-planet")
-          img(src="~/assets/github.png")
+          img(src="~/assets/github.png", alt="Platzi-planet")
         a.btn(target="_blank", href="https://platzi-planet.now.sh") Platzi-planet
       .proyecto-img
         a(target="_blank", href="https://platzi-planet.now.sh")
-          img(src="~/assets/proyectos/platzi-planet.png")
+          img(src="~/assets/proyectos/platzi-planet.png", alt="Platzi-planet")
     
 
 
     .proyecto
       .proyecto-descripcion
         h2 Asomas
-        small Vue - Nuxt
+        small Vue.js - Nuxt
         ul
           li Asomas es una Organización sin fines de lucro
           li Su página original tenía áreas de oportunidad y me decidí regalarles ésta.
           li Usa ruteo del lado del cliente con Nuxt
           li Responsive
         a.git(target="_blank", href="https://github.com/angelvasqueznep/asomas")
-          img(src="~/assets/github.png")
+          img(src="~/assets/github.png", alt="Asomas")
         a.btn(target="_blank", href="https://asomas.now.sh/") Asomas
       .proyecto-img
         a(target="_blank", href="https://asomas.now.sh/") 
-          img(src="~/assets/proyectos/asomas.png")
+          img(src="~/assets/proyectos/asomas.png", alt="Asomas")
     
     
     .proyecto
       .proyecto-descripcion
         h2 Platzi-video
-        small React
+        small React.js
         ul
           li Platzi-video es una aplicación creada con React.js
           li Uso de la API de Video de HTML5
           li Componentes reutilizables
           li Responsive
         a.git(target="_blank", href="https://github.com/angelvasqueznep/platzi-video")
-          img(src="~/assets/github.png")
+          img(src="~/assets/github.png", alt="Platzi-video")
         a.btn(target="_blank", href="https://platzi-video.now.sh/") Platzi-video
       .proyecto-img
         a(target="_blank", href="https://platzi-video.now.sh/")
-          img(src="~/assets/proyectos/platzi-video.png")
+          img(src="~/assets/proyectos/platzi-video.png", alt="Platzi-video")
     
     
     .proyecto
       .proyecto-descripcion
         h2 iVuesic
-        small Vue - Nuxt
+        small Vue.js - Nuxt
         ul
           li Platzi-planet es una aplicación creada con Nuxt
           li Usa una API provista por Platzi a través de Spotify
           li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
           li Es muy divertida
         a.git(target="_blank", href="https://github.com/angelvasqueznep/ivuesic")
-          img(src="~/assets/github.png")
+          img(src="~/assets/github.png", alt="iVuesic")
         a.btn(target="_blank", href="https://ivuesic.now.sh/") iVuesic
       .proyecto-img
         a(target="_blank", href="https://ivuesic.now.sh/")
-          img(src="~/assets/proyectos/ivuesic.png")
+          img(src="~/assets/proyectos/ivuesic.png", alt="iVuesic")
+    
+    
+    .proyecto
+      .proyecto-descripcion
+        h2 Layout
+        small Vue.js - Nuxt
+        ul
+          li Layout es página que muestra el poder de CSS Grid Layout
+          li Se maqueto 
+            | 
+            a(href="https://www.instagram.com/") Instagram 
+            | y 
+            a(href="https://www.pinterest.com.mx/") Pinterest
+          li Es Full Responsive
+        a.git(target="_blank", href="https://github.com/angelvasqueznep/layout")
+          img(src="~/assets/github.png", alt="Layout")
+        a.btn(target="_blank", href="https://layout.now.sh/") Layout
+      .proyecto-img
+        a(target="_blank", href="https://layout.now.sh/")
+          img(src="~/assets/proyectos/layout.png", alt="Layout")
     
 
 </template>
