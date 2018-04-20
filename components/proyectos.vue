@@ -140,7 +140,7 @@
           li Es Full Responsive
         a.git(target="_blank", href="https://github.com/angelvasqueznep/layout")
           img(src="~/assets/github.png", alt="Layout")
-        a.btn(target="_blank", href="https://layout.now.sh/") Foundation
+        a.btn(target="_blank", href="https://layout.now.sh/") Platzipalooza
       .proyecto-img
         a(target="_blank", href="https://layout.now.sh/")
           img(src="~/assets/proyectos/platzi-palooza.png", alt="Foundation")
@@ -150,7 +150,7 @@
 
 <style lang="sass" scoped>
 .proyectos
-  font-family: 'Lato', sans-serif;  
+  font-family: 'Lato', sans-serif;
   padding-top: 20px
   display: grid
   line-height: 30px
@@ -202,7 +202,4 @@
     margin: 5px
   .git
     justify-self: center
-    img
-      margin: 0
-      width: 30px
 </style>

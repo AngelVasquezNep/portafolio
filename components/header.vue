@@ -4,8 +4,7 @@
       img.img(src="~static/perfil.jpg", alt="Luis Ángel Vásquez Nepomuceno")
     .botones
       a.btn-link(href="#proyectos", @click="down($event, 'proyectos')") Proyectos
-      a.btn-link(href="#proyectos", @click="down($event, 'proyectos')") About
-      a.btn-link(href="#proyectos", @click="down($event, 'proyectos')") Contacto
+      a.btn-link(href="#proyectos", @click="down($event, 'contacto')") Contacto
 
 </template>
 
@@ -14,14 +13,26 @@
   export default {
     name: 'my-header',
     methods: {
-    down (evt, obj) {
-    evt.preventDefault()
-      document.getElementById(obj).scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      })
+      down (evt, obj) {
+      evt.preventDefault()
+        document.getElementById(obj).scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        })
+      },
+      scroll (top, altura) {
+        // let algo = window.pageYOffset || docEl.scrollTop || body.scrollTop
+        if(top > altura) {
+        }
+      }
+    },
+    mounted() {
+      const $proyectos = document.getElementById('proyectos')
+      window.addEventListener('scroll', (e) => { 
+        let top = window.scrollY
+        this.scroll(top, $proyectos.offsetTop)
+       })
     }
-  }
   }
 </script>
 

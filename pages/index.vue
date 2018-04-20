@@ -11,6 +11,10 @@
       myStack
     #proyectos(ref="proyectos")
       myProyectos
+    #about
+      myAbout
+    #contacto
+      myContacto
       
 </template>
 
@@ -18,8 +22,10 @@
 import myHeader from '~/components/header.vue'
 import myStack from '~/components/stack.vue'
 import myProyectos from '~/components/proyectos.vue'
+import myAbout from '~/components/about.vue'
+import myContacto from '~/components/contacto.vue'
 export default {
-  components: { myHeader, myStack, myProyectos},
+  components: { myHeader, myStack, myProyectos, myAbout, myContacto },
   methods: {
     down (evt) {
     evt.preventDefault()
