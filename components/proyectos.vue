@@ -189,7 +189,7 @@
     .proyecto-img
       &:hover
         img
-          transform: translateY(-10px) scale(1.05)
+          transform: translateY(-10px) scale(1.01)
           box-shadow: 0 0 3px 3px #696969
 
       img
