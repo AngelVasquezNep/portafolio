@@ -3,7 +3,7 @@
     h2.subtitulo Stack
     .item.item1
       .icons
-        img(src="~/assets/github.png", alt="github")
+        img(src="~/assets/github-1.png", alt="github")
         img(src="~/assets/webpack.png", alt="webpack")
       h3 GitHub - Webpack  
     .item.item2

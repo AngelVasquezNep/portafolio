@@ -10,8 +10,7 @@
           li Platzi-planet es una aplicación creada con Vue.js
           li Usa la 
             | 
-            a(href="https://api.nasa.gov/index.html", target="_blank") API 
-            | de la NASA
+            a(href="https://api.nasa.gov/index.html", target="_blank") API de la NASA
           li Tiene un estado con Vuex y un ruteo del lado del cliente con Router-vue
           li Responsive
         a.git(target="_blank", href="https://github.com/angelvasqueznep/platzi-planet")
@@ -92,6 +91,24 @@
       .proyecto-img
         a(target="_blank", href="https://layout.now.sh/")
           img(src="~/assets/proyectos/layout.png", alt="Layout")
+    
+    
+    .proyecto
+      .proyecto-descripcion
+        h2 Jon Snow
+        small React
+        ul
+          li Jon Snow es tan honorable que quise hacerle una página
+          li Se construyo con React
+          li Usa la 
+            | 
+            a(href="https://api.got.show/doc/", target="_blank") API de GOT
+        a.git(target="_blank", href="https://github.com/angelvasqueznep/jonsnow")
+          img(src="~/assets/github.png", alt="Jon Snow")
+        a.btn(target="_blank", href="https://jons.now.sh/") Jon Snow
+      .proyecto-img
+        a(target="_blank", href="https://layout.now.sh/")
+          img(src="~/assets/proyectos/jonsnow-1.png", alt="Jon Snow")
     
     
     .proyecto
