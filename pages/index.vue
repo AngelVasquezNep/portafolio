@@ -7,7 +7,7 @@
 
         h1.title Luis Ángel Vásquez Nepomuceno
         h2.subtitle Desarrollador Front end
-        a(href="#", @click="down($event)")
+        a.down(href="#", @click="down($event)")
           img(src="~/assets/down.png")
     .stack(ref="stack")
       myStack
@@ -102,7 +102,7 @@ export default {
   padding-bottom: 15px;
 }
 
-a {
+.down {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -118,7 +118,8 @@ a {
   background-color: rgba(0,0,0,.9);
   transition: all .5s;
   
-  &:hover {
+  &:hover,
+  &:focus {
     animation-play-state: paused;
     background-color: rgba(0,0,0,.9);
     opacity: 1 !important;

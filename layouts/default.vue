@@ -48,7 +48,8 @@ body {
   transition: all .1s;
   outline: none;
   background-color: #fff;
-  &:hover {
+  &:hover,
+  &:focus {
     color: #fff;;
     background-color: #42E0C3;
     cursor: pointer;
