@@ -107,7 +107,7 @@
           img(src="~/assets/github.png", alt="Jon Snow")
         a.btn(target="_blank", href="https://jons.now.sh/") Jon Snow
       .proyecto-img
-        a(target="_blank", href="https://layout.now.sh/")
+        a(target="_blank", href="https://jons.now.sh/")
           img(src="~/assets/proyectos/jonsnow-1.png", alt="Jon Snow")
     
     
