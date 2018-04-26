@@ -2,10 +2,12 @@
   section
     .index-container
       .index.center
+
         myHeader
+
         h1.title Luis Ángel Vásquez Nepomuceno
         h2.subtitle Desarrollador Front end
-        a(href="#proyectos", @click="down($event)")
+        a(href="#", @click="down($event)")
           img(src="~/assets/down.png")
     .stack(ref="stack")
       myStack
@@ -47,15 +49,19 @@ export default {
   background-repeat: no-repeat;
   transition: all 1s;
   background-size: cover;
-  animation: move 15s infinite linear alternate;
+  animation: move 10s infinite linear alternate;
   @keyframes move {
     0% {
-      background-position: -10px;
+      background-position: 10px 100px;
+      background-size: 100%;
     }
     50% {
+      background-size: 120%;
+      background-position: -10px -80px;
     }
     100% {
-      background-position: 10px;
+      background-size: 100%;
+      background-position: -10px 10px;
     }
   }
 }
@@ -109,12 +115,13 @@ a {
   height: 50px;
   border: none;
   border-radius: 100px 100px 0 0 ;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,.9);
   transition: all .5s;
   
   &:hover {
     animation-play-state: paused;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.9);
+    opacity: 1 !important;
     img {
       filter: opacity(100%);
     }
@@ -122,14 +129,16 @@ a {
 
   img {
     transition: all .5s;
-    filter: opacity(70%);
+    filter: opacity(50%);
   }
 
-  animation: tintinear 2s infinite;
+  animation: tintinear 3s infinite;
   @keyframes tintinear {
     50% {
-      opacity: .6;
+      background-color: rgba(0,0,0,.3);
+      // opacity: .1;
     }
+    
   }
 
   }
