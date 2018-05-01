@@ -43,7 +43,7 @@ export default {
 <style lang="scss" scoped>
 
 .index-container {
-  background-image: url('~/assets/portada.png');
+  background-image: url('~/assets/space-1.png');
   height: 100vh;
   position: relative;
   background-repeat: no-repeat;
@@ -52,16 +52,16 @@ export default {
   animation: move 10s infinite linear alternate;
   @keyframes move {
     0% {
-      background-position: 10px 100px;
-      background-size: 100%;
+      background-position: 0px -100px;
+      background-size: 140%;
     }
     50% {
-      background-size: 120%;
-      background-position: -10px -80px;
+      background-size: 160%;
+      background-position: -10px 0px;
     }
     100% {
-      background-size: 100%;
-      background-position: -10px 10px;
+      background-size: 140%;
+      background-position: -100px -100px;
     }
   }
 }
