@@ -1,6 +1,6 @@
 <template lang="pug">
   .contacto
-    p © Copyright 2018 Ángel Vásquez
+    p.copy © Copyright 2018 Ángel Vásquez
     span
       a(href="https://github.com/angelvasqueznep", target="_blank")
         img(src="~/assets/github.png", alt="github")
@@ -21,5 +21,11 @@
   display: grid
   align-items: center
   grid-auto-flow: column
-
+  @media screen and (max-width: 768px)
+    grid-auto-flow: row
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 10px 0
+    .copy
+      grid-column: 1 / -1
+    
 </style>
