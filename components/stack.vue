@@ -33,6 +33,8 @@
       .item
         img
           width: 100px
+        .icons
+          justify-content: space-evenly
     .subtitulo
       font-size: 2.5em
   .item
