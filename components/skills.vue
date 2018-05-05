@@ -3,13 +3,18 @@
     h2.subtitle Skills
     .hard
       h2 Hard Skills
-      div(v-for="skill in skills")
+      div(v-for="skill in hardSkills")
         .box
           p {{ skill.name }}
           .progress
             .progress-bar(:style="{width:skill.porcentaje + '%'}")
     .soft
       h2 Soft Skills
+      div(v-for="skill in softSkills")
+        .box
+          p {{ skill.name }}
+          .progress
+            .progress-bar.soft(:style="{width:skill.porcentaje + '%'}")
       
 
 </template>
@@ -19,7 +24,7 @@ export default {
   name: 'skills',
   data () {
     return {
-      skills: [
+      hardSkills: [
         { name: "HTML5", porcentaje: 90 },
         { name: "CSS3 - Animaciones", porcentaje: 85 },
         { name: "JS - EcmaScript6", porcentaje: 85 },
@@ -31,6 +36,17 @@ export default {
         { name: "Pug", porcentaje: 60 },
         { name: "Java", porcentaje: 30 },
         { name: "Python", porcentaje: 20 }
+      ],
+      softSkills: [
+        { name: "Comunicación", porcentaje: 85 },
+        { name: "Comprometido", porcentaje: 95 },
+        { name: "Responsable", porcentaje: 95 },
+        { name: "Autodidacta", porcentaje: 90 },
+        { name: "Trabajo en equipo", porcentaje: 85 },
+        { name: "Liderazgo", porcentaje: 85 },
+        { name: "Automotivación", porcentaje: 85 },
+        { name: "Leal", porcentaje: 95 },
+        { name: "Crítico", porcentaje: 85 },
       ]
     }
   }
@@ -43,7 +59,12 @@ export default {
   color: #2C2C2C;
   font-family: 'Lato', sans-serif;
   display: grid;
-  grid-template-columns: 1fr 1fr
+  padding: 10px 0 70px 0 ;
+  grid-template-columns: 1fr 1fr;
+  transition: all .3s;
+  @media screen and (max-width: 740px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .subtitle {
@@ -79,7 +100,9 @@ export default {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
-
+.progress-bar.soft {
+  background-image: linear-gradient(100deg,#990c9e, #E71D36, #FF9F1C  );
+}
 
 
 </style>

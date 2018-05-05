@@ -14,7 +14,7 @@
     .item.item3
       .icons
         img(src="~/assets/sass.png", alt="sass")
-        img(src="~/assets/pug.jpg", alt="pug")
+        img(src="~/assets/pug.png", alt="pug")
         img.css(src="~/assets/grid.png", alt="css-grid")
       h3 Sass - Pug - Css Grid
 </template>
