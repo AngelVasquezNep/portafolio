@@ -1,11 +1,9 @@
 <template lang="pug">
   .about
-    h2 ¿Quién soy?
-    p Mi nombre es Ángel Vásquez, soy psicólogo egresado de la UNAM, estudie un tiempo matemáticas en la UAM y programación en Platzi, aquí me certifique como Arquitecto Front end y en muchos otros cursos. 
-    p Hace poco empece a escribir para la revista del Colegio de Bachilleres sobre temas de educación online.
-    p Con mis nuevos súper poderes de programación quiero hacer algo a lo que llamo 'Front end Social', la idea es construir páginas para organizaciones de la sociedad civíl que no tengan o que quieran modificarla
-      | 
-      small (Si conoces a alguien que quiera ayuda, pidele que me contacte).
+    h2 About
+    p Mi nombre es Ángel Vásquez, soy psicólogo egresado de la UNAM, estudie matemáticas en la UAM y programación en Platzi. 
+    p Soy columnista de la revista del Colegio de Bachilleres donde hablo sobre temas de educación online.
+    p He sido voluntario en varias Organizaciones Civiles de la Ciudad de México, hoy que sé programar, empiezo a tener contacto con ellos para crearles, modificarles o actualizarles sus plataformas. Sí conoces a alguien que necesite ayuda, compartele mi contacto, por favor.
 </template>
 
 <style lang="sass" scoped>
