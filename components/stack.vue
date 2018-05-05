@@ -25,8 +25,8 @@
     padding-bottom: 50px
     grid-template-columns: repeat(3, 1fr)
     grid-gap: 20px
-    margin: 20px
     color: #2C2C2C
+    background-color: #f1f1f1
     font-family: 'Lato', sans-serif;
     @media screen and (max-width: 768px)
       grid-template-columns: 1fr

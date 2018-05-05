@@ -11,6 +11,8 @@
           img(src="~/assets/down.png")
     .stack(ref="stack")
       myStack
+    #skills
+      mySkills
     #proyectos(ref="proyectos")
       myProyectos
     #about
@@ -26,8 +28,10 @@ import myStack from '~/components/stack.vue'
 import myProyectos from '~/components/proyectos.vue'
 import myAbout from '~/components/about.vue'
 import myContacto from '~/components/contacto.vue'
+import mySkills from '~/components/skills.vue'
+
 export default {
-  components: { myHeader, myStack, myProyectos, myAbout, myContacto },
+  components: { myHeader, myStack, myProyectos, myAbout, myContacto, mySkills },
   methods: {
     down (evt) {
     evt.preventDefault()
