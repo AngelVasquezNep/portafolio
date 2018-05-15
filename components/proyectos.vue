@@ -1,7 +1,25 @@
 <template lang="pug">
   .proyectos
     h2.subtitulo Proyectos
-    
+
+
+    .proyecto
+      .proyecto-descripcion
+        h2 FaceShows
+        small React
+        ul
+          li: strong En construncción
+          li Usa una API de música
+          li El objetivo es recrear la mayor cantidad de funcionalidad de Facebook
+          li Aún no es responsive
+        a.git(target="_blank", href="https://github.com/angelvasqueznep/faceshows")
+          img(src="~/assets/github.png", alt="Faceshows")
+        a.btn(target="_blank", href="https://faceshows.now.sh") Faceshows
+      .proyecto-img
+        a(target="_blank", href="https://faceshows.now.sh")
+          img(src="~/assets/proyectos/faceshows.png", alt="Faceshows")
+
+
     .proyecto
       .proyecto-descripcion
         h2 Platzi-planet
@@ -19,7 +37,6 @@
       .proyecto-img
         a(target="_blank", href="https://platzi-planet.now.sh")
           img(src="~/assets/proyectos/platzi-planet.png", alt="Platzi-planet")
-    
 
 
     .proyecto
