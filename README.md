@@ -1,22 +1,49 @@
-# portafolio
+# Angelito's proyects
 
-> Nuxt.js project
+It contains some of my projects.
+I can build awesome pages and native apps with React.
 
-## Build Setup
+My main stack is:
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+- React
+- Redux
+- Redux Sagas
+- React Native
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+> Builded with Nuxt.js
 
-# build for production and launch server
-$ npm run build
-$ npm start
+## Look me
 
-# generate static project
-$ npm run generate
+[angelito](https://angelvasquez.now.sh/)
+
+## Deploy with now (zeit)
+
+This project is a now old version, for this reason, it needs to do:
+
+```
+yarn run generate
+cd dist
+vim now.json
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+Into `now.json`
+
+```
+{
+  "name": "the-name-of-the-project",
+  "alias": "the-alias-of-the-project", -> my-alias.now.sh
+  "version": 1
+}
+```
+
+Deploy:
+
+```
+now --public deploy (if you have a payment account, you don't need '--public' flag)
+now alias (for point your lasted deploy like my-alias#automatic-hash.now.sh to my-alias.now.sh)
+
+```
+
+---
+
+Note: at december, 2019, version 1 is deprecated.
