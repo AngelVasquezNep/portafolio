@@ -1,0 +1,52 @@
+.proyects
+  font-family: 'Lato', sans-serif
+  padding-top: 20px
+  display: grid
+  line-height: 30px
+  // grid-gap: 10px
+  background-color: #f1f1f1
+  .subtitulo
+    font-size: 2.5em
+  .proyecto
+    align-items: center
+    display: grid
+    grid-template-columns: 1fr 1fr
+    margin: 10px
+    padding: 30px
+    @media screen and (max-width:1100px)
+      padding: 30px 0
+    @media screen and (max-width:950px)
+      grid-template-columns: 1fr
+      grid-gap: 10px
+      .proyecto-img
+        img
+          margin: 10px 0 
+    // border-radius: 5px
+    // box-shadow: 0 0 2px 2px #A9A9A9
+    // border-bottom: 1px solid #808080
+
+    .proyecto-descripcion
+      width: 90%
+      justify-self: center
+      text-align: left
+      display: grid
+      h2
+        font-size: 2em
+        margin: 0
+
+    .proyecto-img
+      &:hover
+        img
+          transform: translateY(-10px) scale(1.01)
+          box-shadow: 0 0 3px 3px #696969
+
+      img
+        transition: all .3s
+        width: 100%
+        border-radius: 20px
+        box-shadow: 0 0 4px 2px #A9A9A9
+  .btn
+    text-align: center
+    margin: 5px
+  .git
+    justify-self: center

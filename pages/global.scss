@@ -1,0 +1,16 @@
+$text-color: #35495e;
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  // min-height: 100vh;
+  // overflow: hidden;
+  font-size: 16px;
+  color: #373737
+}
+.center {
+  height: 100%;
+  display: grid;
+  // justify-content: center;
+  align-items: center;
+  text-align: center;
+}
