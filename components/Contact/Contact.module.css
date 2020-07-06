@@ -1,0 +1,18 @@
+.contacto {
+  padding: 20px 0;
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  background-color: #afb8c0;
+}
+
+@media screen and (max-width: 768px) {
+  .contacto {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px 0;
+  }
+  .contacto .copy {
+    grid-column: 1 / -1;
+  }
+}
