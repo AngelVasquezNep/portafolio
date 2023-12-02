@@ -17,5 +17,5 @@ My main stack is:
 [angelito](https://angelvasquez.now.sh/)
 
 
-## Trying new domain
+## Trying new domain
 [angelito.space](http://angelito.space/)
