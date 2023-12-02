@@ -3,7 +3,7 @@ import classnames from "classnames";
 
 import styles from "./Header.module.sass";
 
-const Header = ({ handleDown }) => (
+const Header = () => (
   <div className={classnames(styles["header"], "center")}>
     <figure>
       <img
@@ -12,22 +12,6 @@ const Header = ({ handleDown }) => (
         alt="Luis Ángel Vásquez Nepomuceno"
       />
     </figure>
-    <div className={styles["botones"]}>
-      <a
-        className={styles["btn-link"]}
-        href="#proyects"
-        onClick={(event) => handleDown(event, "projects")}
-      >
-        Proyectos
-      </a>
-      <a
-        className={styles["btn-link"]}
-        href="#contacto"
-        onClick={(event) => handleDown(event, "contacto")}
-      >
-        Contacto
-      </a>
-    </div>
   </div>
 );
 
