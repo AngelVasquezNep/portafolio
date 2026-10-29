@@ -1,0 +1,8 @@
+dist/
+node_modules/
+pnpm-lock.yaml
+projects/
+.agents/
+.astro/
+AGENTS.md
+requirements.md
